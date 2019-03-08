@@ -115,12 +115,12 @@ int hash = hash32.getValue();
 
 # Download
 
-You can download released artifacts from [Maven Central](http://repo1.maven.org/maven2/org/lz4/lz4-java/).
+You can download released artifacts from [Maven Central](https://search.maven.org/search?q=g:org.lz4%20a:lz4-java).
 
 # Documentation
 
- - [lz4](https://lz4.github.io/lz4-java/1.4.1/docs/net/jpountz/lz4/package-summary.html)
- - [xxhash](https://lz4.github.io/lz4-java/1.4.1/docs/net/jpountz/xxhash/package-summary.html)
+ - [lz4](https://lz4.github.io/lz4-java/1.5.1/docs/net/jpountz/lz4/package-summary.html)
+ - [xxhash](https://lz4.github.io/lz4-java/1.5.1/docs/net/jpountz/xxhash/package-summary.html)
  - [changelog](https://github.com/lz4/lz4-java/blob/master/CHANGES.md)
 
 # Performance
@@ -130,8 +130,8 @@ hashing performance can depend a lot on the input (there are lies, damn lies
 and benchmarks), here are some benchmarks that try to give a sense of the
 speed at which they compress/decompress/hash bytes.
 
- - [lz4 compression](https://lz4.github.io/lz4-java/1.4.0/lz4-compression-benchmark/)
- - [lz4 decompression](https://lz4.github.io/lz4-java/1.4.0/lz4-decompression-benchmark/)
+ - [lz4 compression](https://lz4.github.io/lz4-java/1.5.1/lz4-compression-benchmark/)
+ - [lz4 decompression](https://lz4.github.io/lz4-java/1.5.1/lz4-decompression-benchmark/)
  - [xxhash hashing](https://lz4.github.io/lz4-java/1.3.0/xxhash-benchmark/)
 
 # Build

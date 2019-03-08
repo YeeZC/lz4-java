@@ -1,5 +1,59 @@
 # Change log
 
+## 1.5.1
+
+- [#135](https://github.com/lz4/lz4-java/issues/135)
+  Updated the JNI binding for Win32/amd64 from old LZ4 r123
+  to LZ4 1.8.3. (Rei Odaira)
+
+- [#134](https://github.com/lz4/lz4-java/issues/134)
+  Added Automatic-Module-Name to the manifest to support
+  the Java 9 modularity. (Rei Odaira)
+
+- [#131](https://github.com/lz4/lz4-java/issues/131)
+  Made the StreamingXXHash*JNI methods synchronized to avoid
+  a rare-case race condition with GC. (Roman Leventov, Rei Odaira)
+
+- [#128](https://github.com/lz4/lz4-java/pull/128)
+  Changed the Maven Central download link from a direct link
+  to a search link. (Adam Retter)
+
+## 1.5.0
+
+ - Upgraded LZ4 to 1.8.3. Updated JNI bindings for Linux/amd64,
+   Linux/ppc64le, Linux/s390x, Linux/aarch64, and Mac OS Darwin/x86_64.
+   A speed-up is expected on these platforms.
+   Note that the JNI bindings for Linux/i386 and Win32 still work
+   but are based on old LZ4 r123. Contributions of the JNI
+   bindings for these and other platforms are more than welcome.
+
+ - [#119](https://github.com/lz4/lz4-java/issues/119)
+   Implemented LZ4CompressorWithLength, which includes the length of
+   the original decompressed data in the output compressed data,
+   and corresponding LZ4DecompressorWithLength. (Rei Odaira)
+
+ - [#118](https://github.com/lz4/lz4-java/pull/118)
+   Added build status to README. (Daniel Yu)
+
+ - [#116](https://github.com/lz4/lz4-java/issues/116)
+   Changed LZ4BlockOutputStream and LZ4BlockInputStream to non-final
+   for better testing support. (Rei Odaira)
+
+ - [#113](https://github.com/lz4/lz4-java/pull/113)
+   Compressor and checksum can be specified for LZ4FrameOutputStream.
+   (Elan Kugelmass)
+
+ - [#111](https://github.com/lz4/lz4-java/pull/111)
+   Added lz4 sources as a git submodule. (Daniel Yu)
+
+ - [#110](https://github.com/lz4/lz4-java/pull/110)
+   Enabled Travis CI. (Daniel Yu)
+
+ - Better test coverage. (Rei Odaira)
+
+ - Supported build with Java 9. Note that the distribution is still
+   built with Java 7. (Rei Odaira)
+
 ## 1.4.1
 
  - [#120](https://github.com/lz4/lz4-java/pull/120)

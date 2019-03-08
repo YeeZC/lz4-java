@@ -13,7 +13,7 @@
 -->
 
 <ivy-module version="2.0">
-  <info organisation="org.lz4" module="lz4-java" revision="1.5-SNAPSHOT" />
+  <info organisation="org.lz4" module="lz4-java" revision="1.6-SNAPSHOT" />
 
   <configurations defaultconfmapping="default->default">
     <conf name="default" />
@@ -21,6 +21,6 @@
   </configurations>
 
   <dependencies>
-    <dependency org="com.carrotsearch.randomizedtesting" name="junit4-ant" rev="2.0.9" transitive="true" conf="test->*,!sources,!javadoc" />
+    <dependency org="com.carrotsearch.randomizedtesting" name="junit4-ant" rev="2.5.3" transitive="true" conf="test->*,!sources,!javadoc" />
   </dependencies>
 </ivy-module>
